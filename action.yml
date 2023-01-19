@@ -8,6 +8,7 @@ inputs:
   pattern:
     description: 'A regex pattern to check if a commit message is valid.'
     required: true
+    default: "([A-Z]+-[0-9]+|TRIVIAL)"
   flags:
     description: 'Expression flags change how the expression is interpreted.'
     required: false
@@ -15,6 +16,7 @@ inputs:
   error:
     description: 'A error message which will be returned in case of an error.'
     required: true
+    default: "Failed to find Jira ID in some of the PR's commit messages"
   pre_error:
     description: 'A error message which will be showed in the begin of errors.'
     required: false
