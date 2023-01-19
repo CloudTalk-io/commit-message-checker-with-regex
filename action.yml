@@ -16,7 +16,7 @@ inputs:
   error:
     description: 'A error message which will be returned in case of an error.'
     required: true
-    default: "Failed to find Jira ID in some of the PR's commit messages"
+    default: "Failed to find Jira ID in this PR's commit messages"
   pre_error:
     description: 'A error message which will be showed in the begin of errors.'
     required: false
