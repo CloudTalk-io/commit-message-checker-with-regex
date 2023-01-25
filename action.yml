@@ -8,7 +8,7 @@ inputs:
   pattern:
     description: 'A regex pattern to check if a commit message is valid.'
     required: true
-    default: "([A-Z]+-[0-9]+|TRIVIAL|[mM]erge)"
+    default: "(\b[A-Z][A-Z0-9_]+-[1-9][0-9]*|TRIVIAL|[mM]erge)"
   flags:
     description: 'Expression flags change how the expression is interpreted.'
     required: false
